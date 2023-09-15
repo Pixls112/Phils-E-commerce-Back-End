@@ -7,6 +7,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
+  // Using tag-routes.js model I simply just repurposed the code changing variable names to fit the function.
   try {
     const allProductData = await Product.findAll();
     res.status(200).json(allProductData);
@@ -19,6 +20,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
+  // Using tag-routes.js model I simply just repurposed the code changing variable names to fit the function.
   try {
     const specificProductData = await Product.findByPk(req.params.id, {
       include: [{model: Tag},{model: Category}]
@@ -115,6 +117,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
+  // Using tag-routes.js model I simply just repurposed the code changing variable names to fit the function.
   try {
     const deleteProductData = await Product.destroy({
       where: { id: req.params.id }
