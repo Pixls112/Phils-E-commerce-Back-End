@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) => {
   // Using tag-routes.js model I simply just repurposed the code changing variable names to fit the function.
   try {
     const specificTagData = await Category.findByPk(req.params.id, {
-      include: [{model: Product}]
+      include: {model: Product}
     });
 
     if (!specificTagData) {
