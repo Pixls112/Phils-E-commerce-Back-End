@@ -24,7 +24,7 @@ The main usage of this challenge was to demonstrate my ability to utilize all my
 
 
  ## Video
-This is a placeholder for the actual link.
+https://drive.google.com/file/d/1fwmvVAl5IwwDdZwb5KnhJ7OBevLBZL98/view
 
 
  ## Testing
