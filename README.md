@@ -1,4 +1,4 @@
-s# Phils-Ecommerce
+# Phils-Ecommerce
 
  ## Table of Contents
  - [Description](#description)
